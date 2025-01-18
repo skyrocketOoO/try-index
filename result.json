@@ -1,0 +1,220 @@
+{
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "getOpenAlarms": {
+                "checks": {
+                    "Ping: status is 200": {
+                        "id": "a1b4c2311a86a4911fce842335617e64",
+                        "passes": 27,
+                        "fails": 0,
+                        "name": "Ping: status is 200",
+                        "path": "::getOpenAlarms::Ping: status is 200"
+                    }
+                },
+                "name": "getOpenAlarms",
+                "path": "::getOpenAlarms",
+                "id": "9356618fdeb3c367582baada056717d1",
+                "groups": {}
+            },
+            "getCloseAlarms": {
+                "groups": {},
+                "checks": {
+                        "Ping: status is 200": {
+                            "fails": 0,
+                            "name": "Ping: status is 200",
+                            "path": "::getCloseAlarms::Ping: status is 200",
+                            "id": "c252280e8b2cf2cab2fc3c22146fbe4a",
+                            "passes": 27
+                        }
+                    },
+                "name": "getCloseAlarms",
+                "path": "::getCloseAlarms",
+                "id": "7dbf7efa158f21e397cee5739b65da08"
+            },
+            "getSuspendAlarms": {
+                "name": "getSuspendAlarms",
+                "path": "::getSuspendAlarms",
+                "id": "c95304f1d85ec3e7e1b80e3ebf63a570",
+                "groups": {},
+                "checks": {
+                        "Ping: status is 200": {
+                            "name": "Ping: status is 200",
+                            "path": "::getSuspendAlarms::Ping: status is 200",
+                            "id": "55bccc9a856464b93e9614268367553c",
+                            "passes": 27,
+                            "fails": 0
+                        }
+                    }
+            },
+            "getProcessAlarms": {
+                "id": "1835622480f95c330656024ffa13eff7",
+                "groups": {},
+                "checks": {
+                        "Healthy: status is 200": {
+                            "fails": 0,
+                            "name": "Healthy: status is 200",
+                            "path": "::getProcessAlarms::Healthy: status is 200",
+                            "id": "d889d107c8ffe7eb18ee2de5d76cde49",
+                            "passes": 27
+                        }
+                    },
+                "name": "getProcessAlarms",
+                "path": "::getProcessAlarms"
+            }
+        },
+        "checks": {}
+    },
+    "metrics": {
+        "checks": {
+            "fails": 0,
+            "passes": 108,
+            "value": 1
+        },
+        "http_req_receiving": {
+            "max": 0.539011,
+            "p(90)": 0.2267213,
+            "p(95)": 0.2746376499999999,
+            "avg": 0.15228413888888892,
+            "min": 0.06619,
+            "med": 0.13193749999999999
+        },
+        "group_duration": {
+            "min": 209.719126,
+            "med": 978.323702,
+            "max": 1370.601494,
+            "p(90)": 1301.6696109,
+            "p(95)": 1313.0283659,
+            "avg": 810.3051507407407
+        },
+        "vus": {
+            "value": 1,
+            "min": 1,
+            "max": 1
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 108,
+            "value": 0
+        },
+        "iterations": {
+            "count": 27,
+            "rate": 0.29592145369988976
+        },
+        "http_req_tls_handshaking": {
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0,
+            "min": 0,
+            "med": 0,
+            "max": 0
+        },
+        "close_alarm_duration": {
+            "avg": 236.14814814814815,
+            "min": 209,
+            "med": 214,
+            "max": 697,
+            "p(90)": 223.8,
+            "p(95)": 271.9
+        },
+        "data_sent": {
+            "rate": 395.1099409585565,
+            "count": 36050
+        },
+        "iteration_duration": {
+            "avg": 3241.3549465555557,
+            "min": 3172.111646,
+            "med": 3218.135805,
+            "max": 3657.589356,
+            "p(90)": 3291.6908868,
+            "p(95)": 3327.7965209
+        },
+        "http_req_waiting": {
+            "p(90)": 1308.8090198999998,
+            "p(95)": 1323.76154415,
+            "avg": 841.5099260185185,
+            "min": 209.339797,
+            "med": 977.836331,
+            "max": 2450.869959
+        },
+        "http_req_duration{expected_response:true}": {
+            "max": 2451.017827,
+            "p(90)": 1309.0190273,
+            "p(95)": 1323.9050003,
+            "avg": 841.7172155185183,
+            "min": 209.527721,
+            "med": 978.0928075
+        },
+        "http_req_blocked": {
+            "med": 0.005497500000000001,
+            "max": 0.210236,
+            "p(90)": 0.0139813,
+            "p(95)": 0.015706249999999998,
+            "avg": 0.009069324074074073,
+            "min": 0.002519
+        },
+        "vus_max": {
+            "value": 1,
+            "min": 1,
+            "max": 1
+        },
+        "http_req_connecting": {
+            "med": 0,
+            "max": 0.099861,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.0009246388888888889,
+            "min": 0
+        },
+        "process_alarm_duration": {
+            "avg": 1327.2592592592594,
+            "min": 1259,
+            "med": 1282,
+            "max": 2389,
+            "p(90)": 1320.6,
+            "p(95)": 1349.8
+        },
+        "http_req_duration": {
+            "min": 209.527721,
+            "med": 978.0928075,
+            "max": 2451.017827,
+            "p(90)": 1309.0190273,
+            "p(95)": 1323.9050003,
+            "avg": 841.7172155185183
+        },
+        "http_req_sending": {
+            "p(95)": 0.15145574999999997,
+            "avg": 0.055005361111111116,
+            "min": 0.012445,
+            "med": 0.0414265,
+            "max": 0.306706,
+            "p(90)": 0.13016359999999996
+        },
+        "open_alarm_duration": {
+            "avg": 1373.8148148148148,
+            "min": 1262,
+            "med": 1283,
+            "max": 2451,
+            "p(90)": 1340.4,
+            "p(95)": 2106.6999999999994
+        },
+        "suspend_alarm_duration": {
+            "avg": 430.55555555555554,
+            "min": 418,
+            "med": 427,
+            "max": 467,
+            "p(90)": 451.00000000000006,
+            "p(95)": 462.1
+        },
+        "data_received": {
+            "rate": 1050.2252391809086,
+            "count": 95823
+        },
+        "http_reqs": {
+            "count": 108,
+            "rate": 1.183685814799559
+        }
+    }
+}
